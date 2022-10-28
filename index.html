@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Tags HTML</title>
+    </head>
+    <body>
+        
+        <h1>Tags essenciais no HTML5</h1>
+        <hr />
+
+        <h2>Índice</h2>
+        <ul>
+            <li><a href="#estrutura">Estrutura Básica do HTML</a></li>
+            <li><a href="#tags">Falando sobre Tags</a></li>
+            <li><a href="#atributos">Atributos das Tags</a></li>
+            <li><a href="#textos">Textos</a></li>
+            <li><a href="#listas">Listas Ordenadas e Não Ordenadas</a></li>
+            <li><a href="#links">Links</a></li>
+            <li><a href="#referencias">Referências de Leitura e Aprendizado</a></li>
+        </ul>
+        <hr />
+
+        <h2 id="estrutura">Estrutura Básica do HTML</h2>
+        <h4>Como programadores, é de grande importância que sabemos a estrutura básica do HTML. Nessa seção aprenderemos um pouco sobre essa estrutura.</h4>
+        <p>
+            O documento HTML sempre inicia com o que chamamos de <strong>estrutura básica</strong>. Esta estrutura é quase que imutável. Sempre será dessa
+            forma e você sempre começará seu HTML começando por esse código. <br />
+            Geralmente os editores como o Sublime Text já tem atalhos para iniciar os documento HTMLs com essa estrutura, logo, você não precisa se preocupar em decorá-la, mas é bom que faça.
+        </p>
+        <img src="img/Imagem01.png" />
+        <p>
+            É possível compreender o documento HTML de uma maneira muito simples, através de uma divisão de blocos das tags essenciais, conforme a seguinte estrutura:
+            <ul>
+                <li>Definição do documento (doctype);</li>
+                <li>Cabeça (head);</li>
+                <li>Corpo (body).</li>
+            </ul>
+        </p>
+
+        <h2 id="tags">Falando sobre Tags</h2>
+        <p>Tags são o conjunto de caracteres que formam um elemento, ou seja, quando nos referenciamos à Tag "p" estamos falando disso: &lt;p&gt;</p>
+        <p>Existem dois tipos de Tags, as que necessitam de fechamento e as que não necessitam de fechamento.</p>
+        <p>
+            Para as que necessitam de fechamento, utilizamos o sinal de menos (<), seguido do nome do elemento e o sinal de maior (>) para abertura.<br />
+            Para fechamento, utilizamos o sinal de menor (<), seguido de barra (/), nome do elemento e o sinal de maior (>).
+        </p>
+        <img src="img/Imagem02.png" />
+        <p>
+            Os elementos que não necessitam de fechamento, também conhecidos como <i>elementos vazios</i>, somente utilizamos o sinal de menor (<), <br />
+            seguido do nome do elemento e o sinal de maior (>).
+        </p>
+        <img src="img/Imagem03.png" />
+
+        <h2 id="atributos">Atributos das Tags</h2>
+        <p>
+            Atributos são informações que passamos na Tag para que se comporte da maneira esperada. Existem atributos globais (que funcionam em todas as Tags) <br />
+            e específicos (que são direcionados para cada Tag, através de especificação).
+        </p>
+        <p>Os Atributos possuem nome e um valor, existem Atributos que você vai usar praticamente sempre e existem outros que serão mais raros.</p>
+        <p>
+            <strong>Seguem alguns atributos globais importantes e suas descrições simplificadas:</strong>
+            <ul>
+                <li><strong><i><mark>accesskey</mark></i></strong> = Determina uma (ou mais) tecla(s) de atalho para o elemento. Para definir mais de uma tecla, coloque-as separadas por espaço;</li>
+                <li><strong><i><mark>class</mark></i></strong> = Determina uma (ou mais) classe(s) para o elemento. Para definir mais de uma classe, coloque-as separadas por espaço;</li>
+                <li><strong><i><mark>draggable</mark></i></strong> = Define se um elemento é arrastável ou não;</li>
+                <li><strong><i><mark>hidden</mark></i></strong> = Oculta o elemento onde for declarado;</li>
+                <li><strong><i><mark>id</mark></i></strong> = É o idetificador único do elemento. Somente deve ser declarado um id por elemento. E este id não deve ser repetido na mesma página;</li>
+                <li><strong><i><mark>lang</mark></i></strong> = Determina o idioma em que está escrito o conteúdo do elemento;</li>
+                <li><strong><i><mark>style</mark></i></strong> = Determina propriedades CSS diretamente no elemento;</li>
+                <li><strong><i><mark>tabindex</mark></i></strong> = Organiza os elementos por ordem de tabulação. Deve-se usar valor numérico;</li>
+                <li><strong><i><mark>title</mark></i></strong> = Representa um auxílio ao elemento. Semelhante a dica do elemento.</li>
+            </ul>
+        </p>
+        <p>
+            Como você pôde ver, a sintaxe se Atributos é muito simples, porém, por mais seimples que seja é sempre bom ter em mente boas práticas para que <br />
+            se tenha qualidade e fácil manutenção em seu HTML.
+        </p>
+        <p>
+            Existem Atributos em que os valores não precisam ser passados entre aspas, mas manter um padrão ajuda você e ajuda quem no futuro tenha que trabalhar <br />
+            com o seu HTML. Portante, não é uma regra mas uma boa prática você envolver os valores dos Atributos entre aspas.
+        </p>
+        <img src="img/Imagem04.png" />
+
+        <h2 id="textos">Textos</h2>
+        <p>Um dos principais objetivos do HTML é dar estrutura de texto e significado, também conhecido como semântica, para que um navegador possa exibi-lo corretamente.</p>
+        <p>
+            O texto mais estruturado é composto por títulos e parágrafos, esteja você lendo uma história, um jornal, um livro da faculdade, uma revista, etc. O conteúdo <br />
+            estruturado torna a experiência de leitura mais fácil e mais agradável. Em HTML, cada parágrafo deve ser envolvido em um elemento &lt;p&gt;, assim:
+        </p>
+        <img src="img/Imagem05.png" />
+        <p>Cada título deve ser envolvido em um elemento de título:</p>
+        <img src="img/Imagem06.png" />
+        <p>
+            Existem deis elementos de título - <mark>&lt;h1&gt;</mark>, <mark>&lt;h2&gt;</mark>, <mark>&lt;h3&gt;</mark>, <mark>&lt;h4&gt;</mark>, <mark>&lt;h5&gt;</mark> e <mark>&lt;h6&gt;</mark>.
+            Cada elemento representa um nível diferente de conteúdo no documneto; <br />
+            &lt;h1&gt; representa o título principal, &lt;h2&gt; representa subtítulos, &lt;h3&gt; representa sub-subtítiulos, e assim por diante.
+        </p>
+        <p>
+            Como exemplo, em uma história, &lt;h1&gt; representaria o título da história, &lt;h2&gt; representaria o título de cada capítulo e &lt;h3&gt; representaria sub-seções de cada<br />
+            capítulo, e assim por diante.
+        </p>
+        <img src="img/Imagem07.png" />
+        <p>
+            Depende realmente de você, o quê, exatamente, representam os elementos envolvidos, desde que a hierarquia faça sentido. Você só precisa ter em mente algumas <br />
+            das melhores práticas ao criar tais estruturas:
+        </p>
+        <p>
+            <ul>
+                <li>Preferencialmente, você deve usar apenas <mark>&lt;h1&gt;</mark> por página - esse é o título do nível superior e todos os outros ficam abaixo dele, na hieraquia;</li>
+                <li>
+                    Certifique-se de usar os títulos na ordem correta na hierarquia. Não use <mark>&lt;h3&gt;</mark> para representar subtítulos, seguido de <mark>&lt;h2&gt;</mark> para representar<br />
+                    sub-títulos - isso não faz sentido e levará a resultados estranhos;
+                </li>
+                <li>
+                    Dos seis níveis de cabeçalho disponíveis, você deve usar no máximo três por página, a menos que considere necessário usar mais. Documentos com vários <br />
+                    níveis (ou seja, uma hierarquia profunda de cabeçalho) tornam-se difíceis de navegar. Nessas ocasiões, é aconselhável espalhar o conteúdo por <br />
+                    várias páginas, se possível.
+                </li>
+            </ul>
+        </p>
+
+        <h2 id="listas">Listas</h2>
+        <p>
+            As listas estão em toda parte na vida - de sua lista de compras à lista de instruções que você seguiu inconscientemente para chegar à sua casa <br />
+            todos os dias, para as listas das instruções que está seguindo nesses tutoriais! As listas também estão na Web e temos três tipos diferentes para prestarmos atenção.
+        </p>
+        <h3><strong>Não Ordenada</strong></h3>
+        <p>As listas não ordenadas são usadas para marcar listas de itens para os quais a ordem dos itens não importa - vamos pegar uma lista de compras como um exemplo.</p>
+        <img src="img/Imagem08.png" />
+        <p>Toda lista desordenada começa com um <mark>&lt;ul&gt;</mark> - isso envolve todos os itens da lista:</p>
+        <img src="img/Imagem09.png" />
+        <p>O último passo é envolver cada item da lista em um elemento <mark>&lt;li&gt;</mark> (elemento da lista):</p>
+        <img src="img/Imagem10.png" />
+        <h3><strong>Ordenada</strong></h3>
+        <p>As listas ordenadas são listas em que a ordem dos itens é importante - vamos seguir um conjunto de instruções como exemplo:</p>
+        <img src="img/Imagem11.png" />
+        <p>A estrutura de marcação é a mesma das listas não ordenadas, exceto que você deve conter os itens da lista em um elemento <mark>&lt;ol&gt;</mark>, em vez de <mark>&lt;ul&gt;</mark>:</p>
+        <img src="img/Imagem12.png" />
+
+        <h2 id="links">Links</h2>
+        <p>
+            Os hiperlinks são uma das inovações mais interessantes que a Web oferece. Bem, eles são uma característica da Web desde o início, mas são o que torna a Web como ela é - eles nos <br />
+            permitem vincular nossos documentos a qualuqer outro documento (ou outro recurso) que queremos. Também podemos vincular para partes específicas de documentos e podemos <br />
+            disponibilizar aplicativos em um endereço web simples (em contraste com aplicativos nativos, que devem ser instalados e tantas outras coisas). Qualquer conteúdo da web pode <br />
+            ser convertido em um link, para que, quando clicado (ou ativado de outra forma) fará com que o navegador vá para outro endereço (URL).
+        </p>
+        <p>
+            Um link básico é criado envolvendo o texto ou outro conteúdo que você quer transformar em link dentro de um elemento <mark>&lt;a&gt;</mark>, e dando-lhe um atribulo <mark>href</mark>, <br />
+            (também conhecido como <strong>Hypertext Reference</strong>, ou <strong>target</strong>) que conterá o endereço da Web para o qual você deseja que o link aponte.
+        </p>
+        <img src="img/Imagem13.png" />
+        <hr />
+
+        <h2 id="referencias">Referências de Leitura e Aprendizado</h2>
+        <ol>
+            <li><a href="https://tableless.github.io/iniciantes/manual/html/estruturabasica.html" target="_blank">Um guia para iniciantes na área de web</a></li> <br />
+            <li><a href="https://developer.mozilla.org/pt-BR/docs/Learn/HTML" target="_blank">Estruturando a web com HTML</a></li> <br />
+            <li><a href="https://www.youtube.com/watch?v=4Gq3WW6FwVA" target="_blank">TUTORIAL BÁSICO HTML e CSS: Introdução a código para não-programadores</a></li> <br />
+            <li><a href="https://www.youtube.com/watch?v=3oSIqIqzN3M" target="_blank">5 MINUTOS DE HTML PARA INICIAR EM PROGRAMAÇÃO!</a></li>
+        </ol>
+        
+        
+        
+        
+
+    </body>
+</html>
